@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+       
+        col.cnome{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+             
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+            <tr>
+                <th escope="col">Nome</th>
+                <th escope="col">Sexo</th>
+                <th escope="col">Idade</th>
+                <th escope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cardoso</td>
+                <td>M</td>
+                <td>32</td>
+                <td>vendedor</td>
+            </tr>
+            <tr>
+                <td>lukas</td>
+                <td>M</td>
+                <td>41</td>
+                <td>Médico</td>
+
+            </tr>
+            <tr class="destaque">
+                <td>Isaias</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Marcio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>advogado</td>
+            </tr>
+            <tr class="destaque">
+                <td>Carolayne</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Programador</td>
+            </tr>
+    </table>
+    
+    
+</body>
+</html>
