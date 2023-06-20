@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    
+    
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+
+       
+            
+        <menu id="itens">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -23,6 +32,8 @@
     <main>
         <article>
             <h2>Testando media queries</h2>
+
+
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum libero aliquam aut recusandae ex ad tempore ea magni nostrum inventore velit eligendi voluptates adipisci cupiditate, quod nobis earum ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et facere mollitia reiciendis quod temporibus aperiam nisi harum recusandae eaque eligendi, quis quos. Illo praesentium suscipit ex sunt! Deserunt, ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laboriosam veritatis amet sit quaerat voluptate officiis cupiditate facilis perferendis. Eius perspiciatis rerum libero odit dolor repellat, natus minima ea doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sed aut quam, tenetur, fugit distinctio doloremque aliquid provident, ducimus delectus blanditiis aliquam placeat in ipsam consectetur! Beatae odit ullam asperiores.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum libero aliquam aut recusandae ex ad tempore ea magni nostrum inventore velit eligendi voluptates adipisci cupiditate, quod nobis earum ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et facere mollitia reiciendis quod temporibus aperiam nisi harum recusandae eaque eligendi, quis quos. Illo praesentium suscipit ex sunt! Deserunt, ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laboriosam veritatis amet sit quaerat voluptate officiis cupiditate facilis perferendis. Eius perspiciatis rerum libero odit dolor repellat, natus minima ea doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sed aut quam, tenetur, fugit distinctio doloremque aliquid provident, ducimus delectus blanditiis aliquam placeat in ipsam consectetur! Beatae odit ullam asperiores.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum libero aliquam aut recusandae ex ad tempore ea magni nostrum inventore velit eligendi voluptates adipisci cupiditate, quod nobis earum ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et facere mollitia reiciendis quod temporibus aperiam nisi harum recusandae eaque eligendi, quis quos. Illo praesentium suscipit ex sunt! Deserunt, ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laboriosam veritatis amet sit quaerat voluptate officiis cupiditate facilis perferendis. Eius perspiciatis rerum libero odit dolor repellat, natus minima ea doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sed aut quam, tenetur, fugit distinctio doloremque aliquid provident, ducimus delectus blanditiis aliquam placeat in ipsam consectetur! Beatae odit ullam asperiores.</p>
@@ -30,6 +41,20 @@
 
         </article>
     </main>
+
+
+    <script>
+        function clickMenu() {
+          if (itens.style.display ==   'block' ){
+
+            itens.style.display = 'none'
+
+          } else {
+
+            itens.style.display = 'block'
+          }
+        }
+    </script>
     
 </body>
 </html>
